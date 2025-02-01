@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4e4c81, #1f1d60);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.container {
+    background: #1e1a5f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: red;
+}
+
+.progress-bar-container {
+    width: 100%;
+    background: #ddd;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 15px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background: orange;
+    transition: width 0.5s ease-in-out;
+}
+
+h2#question {
+    color: white;
+}
+h2#welcome {
+    color: white;
+}
+
+p#paragraph {
+    color: white;
+}
+
+
+.options button {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    background: white;
+    color: #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.options button:hover {
+    background: #ddd;
+}
+
+#next-btn, #restart-btn {
+    margin-top: 15px;
+    background: orange;
+    padding: 8px;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    display: none;
+    border: none;
+}
+
+#next-btn:hover, #restart-btn:hover {
+    background: #e69500;
+}
+
+.correct {
+    background: #28a745 !important;
+}
+
+.wrong {
+    background: #dc3545 !important;
+}
+
+#start-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#quiz-screen {
+    display: none;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#start-btn {
+    background: #ff9800;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#start-btn:hover {
+    background: #e68900;
+}
